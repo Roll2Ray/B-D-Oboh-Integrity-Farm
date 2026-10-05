@@ -1,0 +1,11 @@
+{
+  "name": "bd-oboh-integrity-farm",
+  "private": true,
+  "scripts": {
+    "build:css": "node node_modules/tailwindcss/lib/cli.js -c tailwind.config.js -i src/base.css -o css/tailwind-base.css --minify && node node_modules/tailwindcss/lib/cli.js -c tailwind.config.js -i src/utilities.css -o css/tailwind-utilities.css --minify",
+    "watch:css": "npm run build:css -- --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
