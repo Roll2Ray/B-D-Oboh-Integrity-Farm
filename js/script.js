@@ -47,9 +47,9 @@
   ],
 
   sustainabilityMeters: [
-    { label: 'Water Efficiency', value: 85 },
-    { label: 'Renewable Energy Adoption', value: 70 },
-    { label: 'Waste Recycling', value: 75 }
+    { label: 'Water Management', text: 'Responsible and efficient use of water across suitable farm and processing activities.' },
+    { label: 'Renewable Energy', text: 'Exploring solar-powered solutions for suitable farm and processing operations.' },
+    { label: 'Waste & By-product Management', text: 'Responsible handling of cassava peels, fibre and other agricultural by-products.' }
   ],
 
   carouselInterval: 6000,
@@ -63,7 +63,7 @@
   const PRODUCTS = [
     {
       id: 'tubers', name: 'Fresh Cassava Tubers', category: 'fresh', categoryLabel: 'Fresh Cassava',
-      img: IMG + 'cassava-pile.jpg', pos: 'object-center',
+      img: IMG + 'product-cassava-tuber.png', pos: 'object-center',
       short: 'Freshly harvested cassava tubers from our Otefe farm, ready for processing or resale.',
       long: 'Freshly harvested from our fields in Otefe, Oghara. Ideal for garri, fufu and flour producers, food processors and bulk buyers who need dependable fresh supply.',
       points: ['Harvested fresh and supplied in bulk', 'Suitable for garri, fufu, flour and starch production', 'Quantities and delivery arranged with our sales team'],
@@ -121,7 +121,7 @@
       ]
     },
     {
-      id: 'processing', icon: 'fa-industry', title: 'Agro-Processing', img: IMG + 'processing-line.jpg',
+      id: 'processing', icon: 'fa-industry', title: 'Agro-Processing', img: IMG + 'Machine_grinding_cassava.png',
       short: 'Converting fresh cassava into garri, cassava flour, fufu and white amala.',
       body: [
         'Our agro-processing operation turns fresh cassava into garri, cassava flour, fufu and white amala in commercial quantities.',
@@ -153,7 +153,7 @@
   ];
 
   const PROJECTS = [
-    { id: 'p-cassava', category: 'cultivation', categoryLabel: 'Cultivation', title: 'Cassava Production Project', img: IMG + 'cassava-harvest.jpg',
+    { id: 'p-cassava', category: 'cultivation', categoryLabel: 'Cultivation', title: 'Cassava Production Project', img: IMG + 'harvest-cassava.png',
       short: 'Commercial cassava cultivation across our 150-acre farm in Otefe.',
       body: ['Our flagship project: large-scale cassava cultivation that feeds both our processing line and our fresh tuber sales.', 'Project details such as yields and planting calendar: [to be confirmed by farm management].'] },
     { id: 'p-garri', category: 'processing', categoryLabel: 'Processing', title: 'Garri Processing Line', img: IMG + 'garri-hand.jpg',
@@ -173,29 +173,61 @@
       body: ['Packaging and distribution of our processed products to customers in Nigeria and beyond.', 'Export destinations and certifications: [to be confirmed by farm management].'] }
   ];
 
-  // Sample editorial content — clearly labelled "Demo" on the page.
-  const NEWS = [
-    { id: 'n1', category: 'Farming', date: '2026-09-02', title: 'Modern Farming Techniques Transform Crop Production', img: IMG + 'cassava-field-worker.jpg',
-      short: 'How better land preparation, spacing and crop care are helping cassava growers raise productivity.',
-      body: ['Across Nigeria, cassava farmers are turning to improved planting material, better spacing and timely weeding to get more from every hectare.',
-        'Good land preparation is the foundation: well-drained, loosened soil lets tubers develop fully, while clean planting stems give crops a strong start.',
-        'Simple record-keeping — planting dates, inputs and harvest weights — helps farms spot what works and plan each season with confidence.'] },
-    { id: 'n2', category: 'Technology', date: '2026-08-18', title: 'How Technology Is Changing Nigerian Agriculture', img: IMG + 'processing-line.jpg',
-      short: 'From mechanised grating to mobile-phone market access, technology is reshaping the cassava value chain.',
-      body: ['Mechanised washing, grating and drying equipment lets processors turn large volumes of fresh cassava into consistent, hygienic products.',
-        'Mobile phones and messaging apps are also changing how farms reach customers — from quick quotes to order confirmations by WhatsApp.',
-        'As tools become more affordable, even mid-sized farms can adopt practices once limited to large agribusinesses.'] },
-    { id: 'n3', category: 'Sustainability', date: '2026-07-29', title: 'The Future of Sustainable Farming in Nigeria', img: IMG + 'mixed-crop-plot.jpg',
-      short: 'Soil care, crop diversity and waste reuse are central to farming that lasts for generations.',
-      body: ['Sustainable farming protects the soil that every future harvest depends on. Practices such as crop rotation, mulching and returning organic matter keep land productive.',
-        'Cassava peels and other by-products can be reused as animal feed or compost, turning waste into value.',
-        'Farms that look after their land, water and neighbours build the trust that long-term business depends on.'] },
-    { id: 'n4', category: 'Community', date: '2026-07-10', title: 'Youth and the Next Generation of Nigerian Farmers', img: IMG + 'cassava-harvest.jpg',
-      short: 'Why agriculture offers real opportunity for young Nigerians — in the field and along the value chain.',
-      body: ['Agriculture is more than planting and harvesting. Processing, packaging, logistics, marketing and bookkeeping all create careers connected to food.',
-        'Young people bring energy, digital skills and fresh ideas — valuable assets as farms modernise.',
-        'Mentorship and practical training help new farmers turn enthusiasm into skills and steady income.'] }
-  ];
+  // Cassava knowledge and business insights based on the CEO's practical guide.
+const NEWS = [
+  {
+    id: 'n1',
+    category: 'Cassava Processing',
+    date: '2026-10-06',
+    title: 'From Fresh Cassava to High-Quality Cassava Flour',
+    img: IMG + 'Mode_of_Processing_cassava.png',
+    short: 'A controlled processing chain can turn fresh cassava roots into a more stable, market-ready flour product.',
+    body: [
+      'Fresh cassava roots are highly perishable, so controlled processing can help create products that are easier to store, transport and market.',
+      'A typical processing sequence includes sorting, peeling, washing, size reduction, dewatering where applicable, drying, milling, sieving, packaging and storage.',
+      'The key principle is consistency: every stage should be controlled so that the final flour meets the agreed product specification and customer requirements.'
+    ]
+  },
+  {
+    id: 'n2',
+    category: 'Quality & Food Safety',
+    date: '2026-10-06',
+    title: 'Why Quality Starts at Harvest',
+    img: IMG + 'harvest-cassava.png',
+    short: 'Good cassava flour begins with sound raw materials, prompt handling and careful processing.',
+    body: [
+      'The quality of cassava flour is influenced by the condition of the roots before processing. Fresh, mature and sound roots are important starting materials.',
+      'Roots should be handled carefully and processed promptly. Sorting and receiving provide an important quality-control point for identifying damaged or unsuitable material.',
+      'Cassava naturally contains cyanogenic compounds, so appropriate processing, drying control, hygiene and testing where required are important parts of food safety.'
+    ]
+  },
+  {
+    id: 'n3',
+    category: 'Market Development',
+    date: '2026-10-06',
+    title: 'Start With the Customer, Then Build the Process',
+    img: IMG + 'products-packs.jpg',
+    short: 'Understanding buyers, specifications and delivery requirements should come before major investment in processing capacity.',
+    body: [
+      'A market-first approach begins by understanding who will buy the product, what specification they require and how much they may need.',
+      'Potential customer groups can include households, retailers, bakeries, restaurants, food manufacturers, distributors and wholesalers.',
+      'The practical goal is to test demand, produce controlled batches, measure actual costs and build repeat sales before expanding capacity.'
+    ]
+  },
+  {
+    id: 'n4',
+    category: 'Business & Operations',
+    date: '2026-10-06',
+    title: 'Build a Business, Not Just a Product',
+    img: IMG + 'Machine_grinding_cassava.png',
+    short: 'Successful cassava processing requires quality control, cost measurement, reliable delivery and repeat customers.',
+    body: [
+      'A processing business needs more than equipment. Raw-material supply, labour, energy, water, packaging, maintenance, testing, transport and other operating costs all affect the final cost per kilogram.',
+      'Keeping batch records, monitoring production yield and tracking customer feedback can help a processor understand what is working and where improvements are needed.',
+      'The long-term goal is to start small enough to learn, measure enough to understand, standardise enough to repeat and invest enough to scale responsibly.'
+    ]
+  }
+];
 
   const GALLERY = [
     { src: IMG + 'cassava-harvest.jpg', alt: 'Freshly harvested cassava tubers piled in front of a green cassava field', cap: 'Cassava harvest' },
@@ -445,26 +477,13 @@
 
   const Progress = {
     init() {
-      const wrap = $('#sustain-meters');
+      const wrap = $("#sustain-meters");
       if (!wrap) return;
-      wrap.innerHTML = CONFIG.sustainabilityMeters.map((m, i) => `
-        <div>
-          <div class="flex justify-between text-sm font-semibold mb-2"><span id="meter-label-${i}">${escapeHTML(m.label)}</span><span class="meter-val">0%</span></div>
-          <div class="progress-track" role="progressbar" aria-labelledby="meter-label-${i}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${m.value}">
-            <div class="progress-fill" data-value="${m.value}"></div>
-          </div>
-        </div>`).join('');
-      const fill = () => $$('.progress-fill', wrap).forEach((bar) => {
-        const v = bar.dataset.value;
-        bar.style.width = v + '%';
-        const label = bar.closest('.progress-track').parentElement.querySelector('.meter-val');
-        const goal = Number(v);
-        let n = 0;
-        const t = setInterval(() => { n = Math.min(n + 2, goal); label.textContent = n + '%'; if (n >= goal) clearInterval(t); }, 28);
-      });
-      if (!('IntersectionObserver' in window)) { fill(); return; }
-      const io = new IntersectionObserver((e, o) => { if (e[0].isIntersecting) { fill(); o.disconnect(); } }, { threshold: 0.4 });
-      io.observe(wrap);
+      wrap.innerHTML = CONFIG.sustainabilityMeters.map((m) => `
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+          <h4 class="font-bold text-white">${escapeHTML(m.label)}</h4>
+          <p class="mt-2 text-sm text-cream-100/75 leading-relaxed">${escapeHTML(m.text)}</p>
+        </div>`).join("");
     }
   };
 

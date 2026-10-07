@@ -507,3 +507,11 @@ main section .text-center h2::after { margin-left: auto; margin-right: auto; }
   .btn { font-size: .88rem; padding: .75rem 1.1rem; }
   .chip { padding: .45rem .9rem; font-size: .82rem; }
 }
+
+.font-cormorant { font-family: "Cormorant Garamond", Georgia, serif; }
+
+.font-cormorant { font-family: "Cormorant Garamond", Georgia, serif; }
+
+/* Operations icon overflow fix */
+#operations-grid .zoom-wrap { overflow: visible; }
+#operations-grid .zoom-wrap img { overflow: hidden; border-radius: inherit; }
