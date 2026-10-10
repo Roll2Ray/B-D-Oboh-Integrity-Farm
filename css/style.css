@@ -515,3 +515,36 @@ main section .text-center h2::after { margin-left: auto; margin-right: auto; }
 /* Operations icon overflow fix */
 #operations-grid .zoom-wrap { overflow: visible; }
 #operations-grid .zoom-wrap img { overflow: hidden; border-radius: inherit; }
+
+/* Market-First Thinking: explicit light and dark mode colours */
+.market-first-panel {
+  background-color: #f0f7ed;
+}
+
+.market-first-label {
+  color: #387a28;
+}
+
+.market-first-title {
+  color: #183d27;
+}
+
+.market-first-copy {
+  color: #315640;
+}
+
+html.dark .market-first-panel {
+  background-color: #173523;
+}
+
+html.dark .market-first-label {
+  color: #b8e986;
+}
+
+html.dark .market-first-title {
+  color: #fffdf5;
+}
+
+html.dark .market-first-copy {
+  color: #e4eee5;
+}
